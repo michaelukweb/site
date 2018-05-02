@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+
+    <!-- Demo styles -->
+    <style>
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 270px;
+        height: 380px;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        /* Center slide text vertically */
+        /*display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;*/
+    }
+
+    /* img */
+    .icon-pad {
+        padding-top: 30px;
+    }
+
+    .blue-line {
+   /* border:1px solid #132840;*/
+    width:112px;
+    height:2px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: #132840;
+    }
+
+    .caro-text-mobile {
+        font-size: 15px;
+        padding: 22px 0;
+    }
+
+    #read-btn {
+    text-transform: uppercase;
+    font-family:OpenSans-Semibold;
+    font-size:16px;
+    color:#4990e2;
+    letter-spacing:-0.09px;
+    text-align:center;  
+    background:#ffffff;
+    border:1px solid #4990e2;
+    border-radius:25px;
+    width:168px;
+    height:42px;
+    }
+
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <img class="icon-pad" src="img/cv-icon.png" alt="CV Icon">
+                 <h2>CV Writing</h2>
+                 <div class="blue-line"></div>
+                 <p class="caro-text-mobile">
+                  Our CV Writing service will help raise<br>
+                  your visibility to employers.<br>
+                  You can get that job!<br>
+                </p>     
+                <button id="read-btn">Read More</button>        
+            </div>
+
+            <div class="swiper-slide">
+                <img class="icon-pad" src="img/cv-icon.png" alt="CV Icon">
+                 <h2>UCAS</h2>
+                 <div class="blue-line"></div>
+                 <p class="caro-text-mobile">
+                  Our CV Writing service will help raise<br>
+                  your visibility to employers.<br>
+                  You can get that job!<br>
+                </p>     
+                <button id="read-btn">Read More</button>        
+            </div>
+
+            <div class="swiper-slide">
+                <img class="icon-pad" src="img/cv-icon.png" alt="CV Icon">
+                 <h2>Benefit Entitlement</h2>
+                 <div class="blue-line"></div>
+                 <p class="caro-text-mobile">
+                  Our CV Writing service will help raise<br>
+                  your visibility to employers.<br>
+                  You can get that job!<br>
+                </p>     
+                <button id="read-btn">Read More</button>        
+            </div>
+            <div class="swiper-slide">HM Revenue &amp; Customs</div>
+            <div class="swiper-slide">Bank Accounts</div>
+            <div class="swiper-slide">DVLA</div>
+            <div class="swiper-slide">National Insurance</div>
+
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="dist/js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+    });
+    </script>
+</body>
+</html>
